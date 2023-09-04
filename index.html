@@ -8,7 +8,7 @@ title: Home
 <div class="container">
   <section id="about-section">
     <h2>About Me</h2>
-    <p>{{ site.data.about.bio }}</p>
+    <p>{{ site.data.about.bio | markdownify}}</p>
   </section>
 
   <section id="publications-section">
