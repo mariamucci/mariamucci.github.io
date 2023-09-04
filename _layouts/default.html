@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato&display=swap" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      {% include header.html %}
+      <div class="content-container">
+        {{ content }}
+      </div>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="https://github.com/{{ site.data.about.github_username }}">{{ site.data.about.github_username }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages</small></p>
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+  </body>
+</html>

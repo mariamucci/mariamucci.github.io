@@ -1,0 +1,49 @@
+---
+layout: default
+title: Home
+---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato&display=swap" rel="stylesheet">
+
+<div class="container">
+  <section id="about-section">
+    <h2>About Me</h2>
+    <p>{{ site.data.about.bio }}</p>
+  </section>
+
+  <section id="publications-section">
+    <h2>Publications</h2>
+    <div class="container-fluid">
+        {% assign sorted_publications = site.data.publications | sort: "date" | reverse %}
+        {% for publication in sorted_publications %}
+        <hr style="border: 1px solid black;">
+        <!-- Publication Block -->
+        <div class="publication-block">
+            <h4>{{ publication.title }}</h4>
+            <p class="authors">{{ publication.authors | markdownify }}</p>
+            {% if publication.image %}
+            <img src="{{ publication.image }}" alt="{{ publication.title }} image" class="publication-image">
+            {% endif %}
+            {% if publication.journal %}
+            <p><i>{{ publication.journal }}</i>, {{ publication.date }}</p>
+            {% else %}
+            <p><i>Submitted to ArXiv</i>, {{ publication.date }}</p>
+            {% endif %}
+        </div>
+        <!-- Additional Info -->
+        <div class="additional-info">
+            <ul class="info-list">
+                <li><i class="fas fa-barcode"></i> DOI: <a href="https://doi.org/{{ publication.doi }}" target="_blank">{{ publication.doi }}</a></li>
+                <li><i class="fas fa-file-pdf"></i> PDF: <a href="{{ publication.pdf }}" target="_blank">Download</a></li>
+                {% if publication.github %}
+                <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/{{ publication.github }}" target="_blank">{{ publication.github }}</a></li>
+                {% endif %}
+                {% if publication.arxiv %}
+                <li><i class="fas fa-book-open"></i> ArXiv: <a href="https://arxiv.org/abs/{{ publication.arxiv }}" target="_blank">{{ publication.arxiv }}</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+  </section>
+</div>

@@ -1,0 +1,41 @@
+</header>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<header class="header">
+    <div class="header-title">
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.data.about.name }}</a></h1>
+        <h3>{{ site.data.about.title }}</h3>
+        <h4>{{ site.data.about.affiliation }}</h4>
+    </div>
+    <img src="/assets/img/profile_pic.jpg" alt="Profile Picture" class="profile-pic">
+    
+    <div class="external-links">
+        {% if site.data.about.emails %}
+        <div>
+            {% for email in site.data.about.emails %}
+            <p class="email-line"><i class="fas fa-envelope"></i> {{ email | replace: '@', ' [at] ' }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if site.data.about.github_username %}
+        <div><a href="https://github.com/{{ site.data.about.github_username }}"><i class="fab fa-github"></i> Github</a></div>
+        {% endif %}
+    
+        {% if site.data.about.linkedin_username %}
+        <div><a href="https://www.linkedin.com/in/{{ site.data.about.linkedin_username }}"><i class="fab fa-linkedin"></i> LinkedIn</a></div>
+        {% endif %}
+    
+        {% if site.data.about.google_scholar_id %}
+        <div><a href="https://www.google.com/citations?user={{ site.data.about.google_scholar_id }}"><i class="fas fa-graduation-cap"></i> Google Scholar</a></div>
+        {% endif %}
+    
+        {% if site.data.about.orcid_id %}
+        <div><a href="https://orcid.org/{{ site.data.about.orcid_id }}"><i class="fab fa-orcid"></i> ORCID</a></div>
+        {% endif %}
+    
+        {% if site.data.about.twitter_username %}
+        <div><a href="https://twitter.com/{{ site.data.about.twitter_username }}"><i class="fab fa-twitter"></i> Twitter</a></div>
+        {% endif %}
+    </div>
+</header>
