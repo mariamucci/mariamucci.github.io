@@ -16,13 +16,32 @@ title: Home
   <section id="news-section">
     <h2>News</h2>
     <ul class="news-list">
-      {% for news_item in site.data.news %}
+      {% assign sorted_news = site.data.news | sort: "date" | reverse %}
+      {% for news_item in sorted_news limit:4 %}
       <li>
-        <strong>{{ news_item.date }}:</strong> <span>{{ news_item.description | markdownify }}</span>
+        <strong>{{ news_item.date | date: "%B %Y" }}:</strong> <span>{{ news_item.description | markdownify }}</span>
       </li>
       {% endfor %}
     </ul>
+
+    <!-- Wrapper for the toggle -->
+    <div class="news-toggle-wrapper">
+      <input type="checkbox" id="showAllNews" style="display: none;">
+      <label for="showAllNews" class="show-all-btn">Show All</label>
+
+      <div class="all-news">
+        <ul class="news-list">
+          {% for news_item in sorted_news offset:4 %}
+          <li>
+            <strong>{{ news_item.date | date: "%B %Y" }}:</strong> <span>{{ news_item.description | markdownify
+              }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div> <!-- end .news-toggle-wrapper -->
   </section>
+
 
   <section id="publications-section">
     <h2>Publications</h2>

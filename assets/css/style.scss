@@ -64,10 +64,12 @@
   display: inline;
   margin: 0;
 }
-
+.news-list{
+  margin-bottom: 0px;
+}
 /* Section Spacing */
 #about-section, #news-section, #publications-section {
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 }
 
 /* Additional Info Styles */
@@ -96,4 +98,18 @@
 .info-list li span {
   display: inline-block;
   min-width: 60px;  /* Adjust based on your needs */
+}
+
+.show-all-btn {
+  cursor: pointer;
+  color: #267CB9;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.all-news {
+  display: none;
+}
+
+#showAllNews:checked ~ .all-news {
+  display: block;
 }
