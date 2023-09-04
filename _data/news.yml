@@ -1,8 +1,26 @@
-- date: "2023-09-01"
-  description: "Our paper on 'Topic' has been accepted in Journal X. [Read more](https://doi.org/your-doi-here)."
+- date: "2023-05-01"
+  description: "Co-advised project awarded QCS-5 Grant from LPS/ARO reserach grant. [Read more](https://news.engineering.pitt.edu/pitt-researchers-receive-57-million-in-research-funding-from-the-us-army/)."
 
-- date: "2023-08-15"
-  description: "Gave a talk on 'Topic' at Conference Y."
+- date: "2023-01-01"
+  description: "Co-advised project awarded Charles E. Kaufman Foundation reserach grant. [Read more](https://news.engineering.pitt.edu/making-a-quantum-leap-forward/)."
 
-- date: "2023-08-01"
-  description: "Our paper won the Best Paper Award at Conference Z."
+- date: "2022-04-01"
+  description: "Received NSF Honorable Mention."
+
+- date: "2022-03-18"
+  description: "Attended APS March Meeting @ Chicago."
+
+- date: "2022-09-15"
+  description: "Presented poster @ PQI."
+
+- date: "2023-03-01"
+  description: "Presented paper @ HPCA, Montreal."
+
+- date: "2023-03-22"
+  description: "Presented talk @ APS March Meeting, Las Vegas."
+
+- date: "2023-06-09"
+  description: "Presented talk @ Xcite, MIT."
+
+- date: "2023-06-21"
+  description: "Presented paper @ ISCA, Orlando."
