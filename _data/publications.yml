@@ -7,6 +7,8 @@
   pdf: "/assets/pdf/mckinney_hpca_2023.pdf"
   github: "Pitt-JonesLab/clonk_transpilation"
   arxiv: "2205.04387"
+  slides: "/assets/pdf/slides_McKinney_HPCA23.pdf"
+  poster: "/assets/pdf/poster_pqi2022.pdf"
 
 - title: "Parallel Driving for Fast Quantum Computing Under Speed Limits"
   authors: "**McKinney, E.**, Zhou, C., Xia, M., Hatridge, M., Jones, A.K"
@@ -17,6 +19,7 @@
   pdf: "/assets/pdf/mckinney_isca_2023.pdf"
   github: "Pitt-JonesLab/slam_decomposition"
   arxiv: "2302.01252"
+  slides: "/assets/pdf/slides_McKinney_ISCA23.pdf"
 
 - title: "MIRAGE: Quantum Circuit Decomposition and Routing Collaborative Design using Mirror Gates"
   authors: "**McKinney, E.**, Hatridge, M., Jones, A.K"

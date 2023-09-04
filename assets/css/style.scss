@@ -3,35 +3,97 @@
 
 @import "jekyll-theme-minimal";
 
-/* Container */
+/* Global Styles */
 .container {
-    max-width: 1100px;
-    margin: auto;
-    overflow: hidden;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
 }
 
 /* Header Styles */
 .header {
-    padding: 1em;
-    margin: 0;
+  padding: 1em;
+  margin: 0;
 }
-
-.header .profile-pic {
-    border-radius: 50%;
-}
-
 .header-title {
-    text-align: center;
+  text-align: center;
 }
-
 .header h1, .header h3, .header h4 {
-    margin: 10px 0;
+  margin: 10px 0;
 }
-
 .header-links {
-    text-align: left;
+  text-align: left;
 }
 .email-line {
-    margin: 5px 0;
-  }
-  
+  margin: 5px 0;
+}
+
+/* External Links Spacing */
+.external-links div {
+  margin-bottom: 5px;  /* Adjust as needed */
+}
+
+
+/* Profile Picture Styles */
+.profile-pic, .profile-pic-hover {
+  border-radius: 50%;
+}
+.figure {
+  position: relative;
+}
+.figure img.profile-pic-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 50%;
+}
+.figure:hover img.profile-pic-hover {
+  opacity: 1;
+}
+
+/* News Section Styles */
+.news-list li {
+  margin-bottom: 8px;
+}
+.news-list li p {
+  display: inline;
+  margin: 0;
+}
+
+/* Section Spacing */
+#about-section, #news-section, #publications-section {
+  padding-bottom: 10px;
+}
+
+/* Additional Info Styles */
+.additional-info ul.info-list {
+  list-style: none;
+  padding: 0;
+}
+.info-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.info-list i {
+  margin-right: 10px;
+  min-width: 20px;
+  text-align: center;
+}
+.info-list span {
+  margin-right: 5px;
+}
+.info-list a {
+  text-align: left;
+}
+
+/* Label Width */
+.info-list li span {
+  display: inline-block;
+  min-width: 60px;  /* Adjust based on your needs */
+}

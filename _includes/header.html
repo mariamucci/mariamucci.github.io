@@ -7,7 +7,11 @@
         <h3>{{ site.data.about.title }}</h3>
         <h4>{{ site.data.about.affiliation }}</h4>
     </div>
-    <img src="/assets/img/profile_pic.jpg" alt="Profile Picture" class="profile-pic">
+    
+    <div class="figure">
+        <img src="{{site.data.about.picture}}" alt="Profile Picture" class="profile-pic">
+        <img src="{{site.data.about.picture_hover}}" alt="Profile Picture Hover" class="profile-pic-hover">
+    </div>
     
     <div class="external-links">
         {% if site.data.about.emails %}
