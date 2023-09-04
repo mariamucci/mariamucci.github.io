@@ -2,14 +2,14 @@ name: "Evan McKinney"
 picture: "/assets/img/profile_pic.jpg"
 picture_hover: "/assets/img/profile_2.jpg"
 affiliation: "University of Pittsburgh"
-title: "PhD Student"
+title: "Computer Engineering PhD Student"
 bio: |
-  Evan McKinney is a third-year PhD student at the University of Pittsburgh, co-advised by Dr. Alex K. Jones and Dr. Michael Hatridge. He completed his undergraduate studies at Iowa State University in Computer Engineering and Physics. Evan's current research focuses on quantum computing architecture and optimizations for near-term applications.
+  Evan McKinney is a third-year PhD student at the University of Pittsburgh, co-advised by [Dr. Alex K. Jones](https://pitt-joneslab.github.io/) and [Dr. Michael Hatridge](http://hatlab.pitt.edu/index.html). He completed his undergraduate studies at Iowa State University in Computer Engineering and Physics. Evan's current research focuses on quantum computing architecture and optimizations for near-term applications.
   ### Research Interests
   - Quantum hardware-software co-design
   - Quantum circuit transpilation and optimization
   - SNAIL qubit coupling topologies and basis gate sets
-  
+
 emails:
   - evmckinney9@gmail.com
   - evm33@pitt.edu
