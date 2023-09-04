@@ -31,7 +31,7 @@ If you wish to track site visits, add your Google Analytics ID:
 All personal and academic information goes into `_data/about.yml`.
 
 - **Required Fields**: `name`, `picture`, `affiliation`, `title`, `bio`.
-- **Optional Fields**: `email`, `github_username`,
+- **Optional Fields**: `emails`, `github_username`, `linkedin_username`, `google_scholar_id`, `orcid_id`
 
 ### 📄 Example `about.yml`
 
@@ -49,7 +49,10 @@ emails:
 
 ## 📚 Showcasing Your Publications
 
-To display your publications, edit `_data/publications.yml`. You can bold your name in the author list and optionally add arXiv IDs, GitHub repository links, journal names, and associated images.
+To display your publications, edit `_data/publications.yml`. 
+You can bold your name in the author list using `**Your name**`.
+- **Required Fields**: `title`, `authors`, `date`, `doi`, `pdf` 
+- **Optional Fields**: `journal`, `image`, `github`, `arxiv`, `slides`, `poster`, 
 
 ### 📃 Example `publications.yml`
 
