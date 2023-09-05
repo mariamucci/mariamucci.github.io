@@ -5,7 +5,6 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Evan McKinney Homepage
-email: evmckinney9@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Evan McKinney's personal homepage, a PhD student at the University of Pittsburgh. 
 baseurl: "" # the subpath of your site, e.g. /blog

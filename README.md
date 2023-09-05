@@ -16,7 +16,6 @@ Welcome to this academic homepage template, designed for simplicity and ease of 
 Open the `_config.yml` file and update the following fields:
 
 - `title`: Set this to the title you want for your homepage. Example: "John Doe's Homepage."
-- `email`: Your primary email address.
 - `description`: A brief tagline or description of your academic interests.
 - `url`: Set this to `"http://your-username.github.io"` replacing `your-username` with your GitHub username.
 
@@ -49,10 +48,11 @@ emails:
 
 ## 📚 Showcasing Your Publications
 
-To display your publications, edit `_data/publications.yml`. 
+To display your publications, edit `_data/publications.yml`.
 You can bold your name in the author list using `**Your name**`.
-- **Required Fields**: `title`, `authors`, `date`, `doi`, `pdf` 
-- **Optional Fields**: `journal`, `image`, `github`, `arxiv`, `slides`, `poster`, 
+
+- **Required Fields**: `title`, `authors`, `date`, `doi`, `pdf`
+- **Optional Fields**: `journal`, `image`, `github`, `arxiv`, `slides`, `poster`,
 
 ### 📃 Example `publications.yml`
 
