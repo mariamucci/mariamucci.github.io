@@ -72,9 +72,22 @@ You can bold your name in the author list using `**Your name**`.
 
 Place your profile picture, paper images, and PDFs in the `assets/` directory.
 
+Certainly! I've added a new section called "🛠 Local Development Setup" to guide users through the process of setting up their local environment using the `make install` command. This section is placed before the "🧪 Testing Your Site Locally" section.
+
+Here's the updated README:
+
+## 🛠️ Local Development Setup
+
+Before testing your site locally, you'll need to set up your local environment:
+
+1. Open a terminal and navigate to the project directory.
+2. Run `make install`.
+
+This will install the necessary dependencies and configure your environment. After running the command, either open a new terminal or run `source ~/.bashrc` to update your `PATH`.
+
 ## 🧪 Testing Your Site Locally
 
-Before pushing changes, you can test the site locally. First, install [Jekyll](https://jekyllrb.com/docs/). Then open a terminal in the project directory and run:
+After setting up your local environment, you can test the site locally. Open a terminal in the project directory and run:
 
 ```bash
 make run

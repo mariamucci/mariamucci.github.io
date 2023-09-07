@@ -9,7 +9,7 @@ title: Home
 <div class="container">
   <section id="about-section">
     <h2>About Me</h2>
-    <p>{{ site.data.about.bio | markdownify}}</p>
+    <p>{{ site.data.about.bio | markdownify }}</p>
   </section>
 
   <!-- News Section -->
@@ -42,20 +42,21 @@ title: Home
     </div> <!-- end .news-toggle-wrapper -->
   </section>
 
-
+  <!-- Publications Section -->
   <section id="publications-section">
     <h2>Publications</h2>
     <div class="container-fluid">
-      {% assign sorted_publications = site.data.publications | sort: "date" |
-      reverse %} {% for publication in sorted_publications %}
-      <hr style="border: 1px solid black" />
+      {% assign sorted_publications = site.data.publications | sort: "date" | reverse %}
+      {% for publication in sorted_publications %}
+      <hr style="border: 1px solid rgb(0, 0, 0)" />
       <!-- Publication Block -->
       <div class="publication-block">
         <h4>{{ publication.title }}</h4>
         <p class="authors">{{ publication.authors | markdownify }}</p>
         {% if publication.image %}
         <img src="{{ publication.image }}" alt="{{ publication.title }} image" class="publication-image" />
-        {% endif %} {% if publication.journal %}
+        {% endif %}
+        {% if publication.journal %}
         <p><i>{{ publication.journal }}</i>, {{ publication.date }}</p>
         {% else %}
         <p><i>Submitted to ArXiv</i>, {{ publication.date }}</p>
@@ -98,8 +99,30 @@ title: Home
           {% endif %}
         </ul>
       </div>
+      {% endfor %}
+      <hr style="border: 1px solid rgb(0, 0, 0)" /> <!-- This is the new line -->
+    </div>
+  </section>
 
+  <!-- Teaching Section -->
+  <section id="teaching-section">
+    <h2>Teaching</h2>
+    <div class="container-fluid">
+      {% for teaching in site.data.teaching %}
+      <!-- Teaching Block -->
+      <div class="teaching-block">
+        <p><strong>{{ teaching.role }} @ {{ teaching.university }}</strong></p>
+        <ul class="course-list">
+          {% assign sorted_courses = teaching.courses | sort: "sort_date" | reverse %}
+          {% for course in sorted_courses %}
+          <li>
+            <strong>{{ course.term }}:</strong> <span>{{ course.course }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
       {% endfor %}
     </div>
   </section>
+
 </div>
