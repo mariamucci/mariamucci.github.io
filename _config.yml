@@ -15,6 +15,14 @@ google_analytics: G-0S6658MQKV
 # Build settings
 theme: jekyll-theme-minimal
 
+# Front Matter Defaults
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  - scope:
+      path: ""
+    values:
+      author: Evan McKinney
+      image: /assets/img/banners/banner2.png
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -10,22 +10,87 @@
   overflow: hidden;
 }
 
-/* Header Styles */
+/* Existing styles */
+
+/* Media Query for screens smaller than 960px */
+@media (max-width: 960px) {
+  body {
+    margin: 0; /* Remove default margin */
+  }
+  .header {
+    // position: sticky; /* Add this line */
+    text-align: center; /* Center-align text */
+    padding: 0; /* Remove padding */
+  }
+  .header-title h1 {
+    font-size: 2em; /* Adjust as needed */
+  }
+  
+  .header-title h3 {
+    font-size: 1.6em; /* Adjust as needed */
+  }
+  
+  .header-title h4 {
+    font-size: 1.2em; /* Adjust as needed */
+  }
+  .external-links div {
+    font-size: 1.15em; /* Adjust as needed */
+  }
+
+  .header::before {
+    top: 0; /* Touch the top of the screen */
+    left: 0; /* Touch the left of the screen */
+    right: 0; /* Touch the right of the screen */
+    bottom: 0; /* Confine to the bottom of the header */
+    background-size: auto 100%; /* Adjust this to control how much of the image is visible */
+  }
+  .profile-pic, .profile-pic-hover {
+    width: 60%; /* Adjust as needed */
+    margin: auto; /* Center the image */
+    display: block;
+  }
+
+  .external-links {
+    display: inline-block; /* Make them inline-block to center as a block */
+    text-align: left; /* Keep text left-justified */
+  }
+
+  .header::before {
+    bottom: 0; /* Adjust this value to prevent the background from extending too far */
+  }
+}
+
+
 .header {
+  position: relative; /* Keep this line */
+  overflow: hidden; /* Keep this line */
   padding: 1em;
   margin: 0;
+  z-index: 1000;
 }
-.header-title {
-  text-align: center;
+
+.header::before {
+  content: "";
+  position: absolute; /* Absolute position */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Behind the content */
+  background-image: url("/assets/img/banners/banner1.png");
+  background-size: cover;
+  background-position: var(--bg-position, 0) center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  border-radius: 10px;
 }
-.header h1, .header h3, .header h4 {
-  margin: 10px 0;
-}
-.header-links {
-  text-align: left;
+
+.header-title h1, .header-title h3, .header-title h4 {
+  margin-bottom: 0.35em; /* Reduce vertical spacing */
 }
 .email-line {
   margin: 5px 0;
+  color: #393939;
 }
 
 /* External Links Spacing */
@@ -37,6 +102,7 @@
 /* Profile Picture Styles */
 .profile-pic, .profile-pic-hover {
   border-radius: 50%;
+  max-width: 100%; /* Make sure it scales */
 }
 .figure {
   position: relative;
