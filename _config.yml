@@ -15,6 +15,11 @@ google_analytics: G-0S6658MQKV
 # Build settings
 theme: jekyll-theme-minimal
 
+plugins:
+  - jekyll-gist
+  - jekyll-coffeescript
+  - jekyll-seo-tag
+
 # Front Matter Defaults
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
