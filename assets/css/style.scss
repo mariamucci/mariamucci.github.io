@@ -14,9 +14,6 @@
 
 /* Media Query for screens smaller than 960px */
 @media (max-width: 960px) {
-  body {
-    margin: 0; /* Remove default margin */
-  }
   .header {
     // position: sticky; /* Add this line */
     text-align: center; /* Center-align text */
