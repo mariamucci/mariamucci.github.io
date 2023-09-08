@@ -16,8 +16,6 @@ google_analytics: G-0S6658MQKV
 theme: jekyll-theme-minimal
 
 plugins:
-  - jekyll-gist
-  - jekyll-coffeescript
   - jekyll-seo-tag
 
 # Front Matter Defaults
@@ -27,7 +25,7 @@ defaults:
       path: ""
     values:
       author: Evan McKinney
-      image: /assets/img/banners/banner2.png
+      image: /assets/img/banners/share_banner.png
 
 # Exclude from processing.
 # The following items will not be processed, by default.
