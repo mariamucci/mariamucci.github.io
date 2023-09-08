@@ -15,9 +15,8 @@
 /* Media Query for screens smaller than 960px */
 @media (max-width: 960px) {
   .header {
-    // position: sticky; /* Add this line */
+    position: relative; /* Add this line */
     text-align: center; /* Center-align text */
-    padding: 0; /* Remove padding */
   }
   .header-title h1 {
     font-size: 2em; /* Adjust as needed */
@@ -30,17 +29,13 @@
   .header-title h4 {
     font-size: 1.2em; /* Adjust as needed */
   }
-  .external-links div {
-    font-size: 1.15em; /* Adjust as needed */
-  }
 
   .header::before {
     top: 0; /* Touch the top of the screen */
     left: 0; /* Touch the left of the screen */
     right: 0; /* Touch the right of the screen */
-    bottom: 0; /* Confine to the bottom of the header */
-    background-size: auto 100%; /* Adjust this to control how much of the image is visible */
   }
+
   .profile-pic, .profile-pic-hover {
     width: 60%; /* Adjust as needed */
     margin: auto; /* Center the image */
@@ -59,31 +54,31 @@
 
 
 .header {
-  position: relative; /* Keep this line */
-  overflow: hidden; /* Keep this line */
+  // position: relative; /* Add this line */
+  overflow: hidden; /* Add this line */
   padding: 1em;
   margin: 0;
   z-index: 1000;
 }
 
+.header-title h1, .header-title h3, .header-title h4 {
+  margin-bottom: 0.35em; /* Reduce vertical spacing */
+}
+
 .header::before {
   content: "";
-  position: absolute; /* Absolute position */
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1; /* Behind the content */
+  z-index: -1;
   background-image: url("/assets/img/banners/banner1.png");
   background-size: cover;
   background-position: var(--bg-position, 0) center;
   background-repeat: no-repeat;
   opacity: 0.15;
   border-radius: 10px;
-}
-
-.header-title h1, .header-title h3, .header-title h4 {
-  margin-bottom: 0.35em; /* Reduce vertical spacing */
 }
 .email-line {
   margin: 5px 0;
