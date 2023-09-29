@@ -1,5 +1,8 @@
+- date: "2023-09-29"
+  description: "Invited talk @ [Qiskit Compiler Seminar Series](https://qiskit.org/documentation/apidoc/transpiler.html#module-qiskit.transpiler)."
+  
 - date: "2023-09-07"
-  description: "Presented talk @ [QuCS Lecture Series](https://sites.nd.edu/quantum/quantum-computer-systems-qucs-lecture-series/research-session/research-session-38-evan-mckinney/)."
+  description: "Invited talk @ [QuCS Lecture Series](https://sites.nd.edu/quantum/quantum-computer-systems-qucs-lecture-series/research-session/research-session-38-evan-mckinney/)."
   
 - date: "2023-05-01"
   description: "Co-advised project awarded QCS-5 Grant from LPS/ARO reserach grant. [Read more](https://news.engineering.pitt.edu/pitt-researchers-receive-57-million-in-research-funding-from-the-us-army/)."
@@ -17,16 +20,16 @@
   description: "Presented poster @ PQI."
 
 - date: "2023-03-01"
-  description: "Presented paper @ HPCA, Montreal."
+  description: "Conference paper @ HPCA, Montreal."
 
 - date: "2023-03-22"
-  description: "Presented talk @ APS March Meeting, Las Vegas."
+  description: "Conference talk @ APS March Meeting, Las Vegas."
 
 - date: "2023-06-09"
-  description: "Presented talk @ XCITe, MIT."
+  description: "Invited talk @ XCITe, MIT."
 
 - date: "2023-06-21"
-  description: "Presented paper @ ISCA, Orlando."
+  description: "Conference paper @ ISCA, Orlando."
 
 - date: "2021-06-01"
   description: "Attended [The Quantum Computing Summer School](https://www.lanl.gov/projects/national-security-education-center/information-science-technology/summer-schools/quantumcomputing/index.php) @ LANL, Los Alamos."
