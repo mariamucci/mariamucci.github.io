@@ -10,6 +10,10 @@ title: Home
   <section id="about-section">
     <h2>About Me</h2>
     <p>{{ site.data.about.bio | markdownify }}</p>
+    <div class="latest-blog">
+      <h3>My Latest Blog Post</h3>
+      <div id="latest-blog-post"></div>
+    </div>
   </section>
 
   <!-- News Section -->
@@ -126,3 +130,32 @@ title: Home
   </section>
 
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch('https://blog.evm9.dev/index.xml')
+      .then(response => response.text())
+      .then(data => {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(data, "text/xml");
+
+        const latestPost = xmlDoc.getElementsByTagName("item")[0];
+        const title = latestPost.getElementsByTagName("title")[0].textContent;
+        const link = latestPost.getElementsByTagName("link")[0].textContent;
+        const pubDate = new Date(latestPost.getElementsByTagName("pubDate")[0].textContent);
+        const formattedDate = pubDate.toLocaleString('default', { month: 'long' }) + ' ' + pubDate.getFullYear();
+        const imageUrl = latestPost.getElementsByTagName("media:content")[0].getAttribute("url");
+
+        const blogHtml = `
+                <img src="${imageUrl}" alt="Thumbnail Image">
+                <div class="blog-content">
+                    <h3><a href="${link}">${title}</a></h3>
+                    <div class="subtitle">${formattedDate}</div>
+                </div>
+            `;
+        document.getElementById("latest-blog-post").innerHTML = blogHtml;
+      })
+      .catch(err => console.error('Error fetching RSS feed:', err));
+  });
+
+</script>

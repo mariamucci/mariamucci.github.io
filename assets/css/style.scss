@@ -171,3 +171,29 @@
 #showAllNews:checked ~ .all-news {
   display: block;
 }
+/* Blog Post Styling */
+.latest-blog {
+  padding: 5px 0;
+}
+#latest-blog-post .blog-content h3 {
+  margin-bottom: 5px;  /* adjust as needed */
+}
+
+#latest-blog-post {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+#latest-blog-post img {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: fill;
+  border-radius: 4px;
+  margin-right: 20px;  /* space between image and content */
+}
+
+#latest-blog-post .blog-content {
+  display: block;  /* change from flex to block */
+  width: 100%;  /* ensures the title and date take up full width */
+}
