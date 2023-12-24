@@ -27,7 +27,7 @@
   date: "2023-08-07"
   doi: "10.48550/arXiv.2308.03874"
   image: "/assets/img/mirage.png"
-  pdf: "/assets/pdf/mckinney_mirage_arxiv.pdf"
+  pdf: "/assets/pdf/mckinney_mirage.pdf"
   github: "Pitt-JonesLab/mirror-gates"
   arxiv: "2308.03874"
   slides: "/assets/pdf/slides_McKinney_MIRAGE.pdf"
