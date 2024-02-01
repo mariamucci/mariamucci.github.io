@@ -101,6 +101,12 @@ title: Home
             <a href="https://arxiv.org/abs/{{ publication.arxiv }}" target="_blank">{{ publication.arxiv }}</a>
           </li>
           {% endif %}
+          {% if publication.video %}
+            <li>
+              <i class="fas fa-video"></i><span>Video:</span>
+              <a href="{{ publication.video }}" target="_blank">{{ publication.video }}</a>
+            </li>
+          {% endif %}
         </ul>
       </div>
       {% endfor %}
