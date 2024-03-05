@@ -1,3 +1,6 @@
+- date: "2024-03-02"
+  description: "Conference paper @ HPCA'24, Edinburgh, Scotland."
+
 - date: "2024-02-02"
   description: "Invited talk @ [Amazon Braket](https://aws.amazon.com/braket/)."
 
@@ -32,7 +35,7 @@
   description: "Presented poster @ PQI."
 
 - date: "2023-03-01"
-  description: "Conference paper @ HPCA, Montreal."
+  description: "Conference paper @ HPCA'23, Montreal, Canada."
 
 - date: "2023-03-22"
   description: "Conference talk @ APS March Meeting, Las Vegas."
@@ -41,7 +44,7 @@
   description: "Invited talk @ XCITe, MIT."
 
 - date: "2023-06-21"
-  description: "Conference paper @ ISCA, Orlando."
+  description: "Conference paper @ ISCA'23, Orlando, Florida."
 
 - date: "2021-06-01"
   description: "Attended [The Quantum Computing Summer School](https://www.lanl.gov/projects/national-security-education-center/information-science-technology/summer-schools/quantumcomputing/index.php) @ LANL, Los Alamos."
