@@ -171,6 +171,7 @@
 #showAllNews:checked ~ .all-news {
   display: block;
 }
+
 /* Blog Post Styling */
 .latest-blog {
   padding: 5px 0;
@@ -193,7 +194,7 @@
   margin-right: 20px;  /* space between image and content */
 }
 
-#latest-blog-post .blog-content {
-  display: block;  /* change from flex to block */
-  width: 100%;  /* ensures the title and date take up full width */
+#latest-blog-post .blog-date {
+  font-size: 14px; /* Smaller than the description */
+  font-style: italic; /* Differentiation through font style */
 }

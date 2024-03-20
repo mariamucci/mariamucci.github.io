@@ -102,10 +102,10 @@ title: Home
           </li>
           {% endif %}
           {% if publication.video %}
-            <li>
-              <i class="fas fa-video"></i><span>Video:</span>
-              <a href="{{ publication.video }}" target="_blank">{{ publication.video }}</a>
-            </li>
+          <li>
+            <i class="fas fa-video"></i><span>Video:</span>
+            <a href="{{ publication.video }}" target="_blank">{{ publication.video }}</a>
+          </li>
           {% endif %}
         </ul>
       </div>
@@ -148,6 +148,7 @@ title: Home
         const latestPost = xmlDoc.getElementsByTagName("item")[0];
         const title = latestPost.getElementsByTagName("title")[0].textContent;
         const link = latestPost.getElementsByTagName("link")[0].textContent;
+        const description = latestPost.getElementsByTagName("description")[0].textContent;
         const pubDate = new Date(latestPost.getElementsByTagName("pubDate")[0].textContent);
         const formattedDate = pubDate.toLocaleString('default', { month: 'long' }) + ' ' + pubDate.getFullYear();
         const imageUrl = latestPost.getElementsByTagName("media:content")[0].getAttribute("url");
@@ -156,7 +157,8 @@ title: Home
                 <img src="${imageUrl}" alt="Thumbnail Image">
                 <div class="blog-content">
                     <h3><a href="${link}">${title}</a></h3>
-                    <div class="subtitle">${formattedDate}</div>
+                    <p class="blog-description">${description}</p>
+                    <div class="blog-date">${formattedDate}</div>
                 </div>
             `;
         document.getElementById("latest-blog-post").innerHTML = blogHtml;
