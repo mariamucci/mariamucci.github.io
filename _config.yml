@@ -8,9 +8,11 @@ title: Maria Mucci Homepage
 repository: evmckinney9/mariamucci.github.io
 description: >- # this means to ignore newlines until "baseurl:"
   Maria Mucci's personal homepage, an experimental quantum physicist from the University of Pittsburgh. 
-baseurl: "" # the subpath of your site, e.g. /blog
+
 # XXX get rid of this once transfer ownership
-url: "http://evm9.dev" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "http://evm9.dev" # the subpath of your site, e.g. /blog
+
+# url: "http://evm9.dev" # the base hostname & protocol for your site, e.g. http://example.com
 # google_analytics: G-0S6658MQKV
 
 # Build settings
