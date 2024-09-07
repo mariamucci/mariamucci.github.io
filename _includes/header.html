@@ -9,8 +9,9 @@
     </div>
 
     <div class="figure">
-        <img src="{{site.data.about.picture}}" alt="Profile Picture" class="profile-pic">
-        <img src="{{site.data.about.picture_hover}}" alt="Profile Picture Hover" class="profile-pic-hover">
+        <img src="{{ site.baseurl }}/{{site.data.about.picture}}" alt="Profile Picture" class="profile-pic">
+        <img src="{{ site.baseurl }}/{{site.data.about.picture_hover}}" alt="Profile Picture Hover"
+            class="profile-pic-hover">
     </div>
 
     <div class="external-links">
@@ -22,7 +23,8 @@
         </div>
         {% endif %}
 
-        <div><a href="{{ site.baseurl }}/assets/pdf/Maria_Mucci_CV_May2024.pdf"" target=" _blank"><i class="fa fa-book"></i> Curriculum
+        <div><a href="{{ site.baseurl }}/assets/pdf/Maria_Mucci_CV_May2024.pdf"" target=" _blank"><i
+                    class="fa fa-book"></i> Curriculum
                 Vitae</a></div>
 
         {% if site.data.about.github_username %}
