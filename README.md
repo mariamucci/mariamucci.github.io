@@ -35,8 +35,8 @@ You can bold your name in the author list using `**Your name**`.
   journal: "Journal of Something"
   date: "2023-04-01"
   doi: "DOI_here"
-  image: "/assets/img/paper_image.jpg"
-  pdf: "/assets/pdf/paper.pdf"
+  image: "{{ site.baseurl }}/assets/img/paper_image.jpg"
+  pdf: "{{ site.baseurl }}/assets/pdf/paper.pdf"
   github: "github_repo"
   arxiv: "arxiv_id"
 ```

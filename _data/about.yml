@@ -1,6 +1,6 @@
 name: "Maria Mucci"
-picture: "/assets/img/maria_profile_pic.jpg"
-picture_hover: "/assets/img/maria_profile_pic2.jpg"
+picture: "{{ site.baseurl }}/assets/img/maria_profile_pic.jpg"
+picture_hover: "{{ site.baseurl }}/assets/img/maria_profile_pic2.jpg"
 affiliation: "University of Pittsburgh"
 title: "Physics PhD"
 bio: |
