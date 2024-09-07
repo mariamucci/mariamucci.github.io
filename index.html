@@ -10,40 +10,6 @@ title: Home
   <section id="about-section">
     <h2>About Me</h2>
     <p>{{ site.data.about.bio | markdownify }}</p>
-    <div class="latest-blog">
-      <h3>My Latest Blog Post</h3>
-      <div id="latest-blog-post"></div>
-    </div>
-  </section>
-
-  <!-- News Section -->
-  <section id="news-section">
-    <h2>News</h2>
-    <ul class="news-list">
-      {% assign sorted_news = site.data.news | sort: "date" | reverse %}
-      {% for news_item in sorted_news limit:4 %}
-      <li>
-        <strong>{{ news_item.date | date: "%B %Y" }}:</strong> <span>{{ news_item.description | markdownify }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-
-    <!-- Wrapper for the toggle -->
-    <div class="news-toggle-wrapper">
-      <input type="checkbox" id="showAllNews" style="display: none;">
-      <label for="showAllNews" class="show-all-btn">Show All</label>
-
-      <div class="all-news">
-        <ul class="news-list">
-          {% for news_item in sorted_news offset:4 %}
-          <li>
-            <strong>{{ news_item.date | date: "%B %Y" }}:</strong> <span>{{ news_item.description | markdownify
-              }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div> <!-- end .news-toggle-wrapper -->
   </section>
 
   <!-- Publications Section -->
@@ -114,56 +80,4 @@ title: Home
     </div>
   </section>
 
-  <!-- Teaching Section -->
-  <section id="teaching-section">
-    <h2>Teaching</h2>
-    <div class="container-fluid">
-      {% for teaching in site.data.teaching %}
-      <!-- Teaching Block -->
-      <div class="teaching-block">
-        <p><strong>{{ teaching.role }} @ {{ teaching.university }}</strong></p>
-        <ul class="course-list">
-          {% assign sorted_courses = teaching.courses | sort: "sort_date" | reverse %}
-          {% for course in sorted_courses %}
-          <li>
-            <strong>{{ course.term }}:</strong> <span>{{ course.course }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endfor %}
-    </div>
-  </section>
-
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch('https://blog.evm9.dev/index.xml')
-      .then(response => response.text())
-      .then(data => {
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(data, "text/xml");
-
-        const latestPost = xmlDoc.getElementsByTagName("item")[0];
-        const title = latestPost.getElementsByTagName("title")[0].textContent;
-        const link = latestPost.getElementsByTagName("link")[0].textContent;
-        const description = latestPost.getElementsByTagName("description")[0].textContent;
-        const pubDate = new Date(latestPost.getElementsByTagName("pubDate")[0].textContent);
-        const formattedDate = pubDate.toLocaleString('default', { month: 'long' }) + ' ' + pubDate.getFullYear();
-        const imageUrl = latestPost.getElementsByTagName("media:content")[0].getAttribute("url");
-
-        const blogHtml = `
-                <img src="${imageUrl}" alt="Thumbnail Image">
-                <div class="blog-content">
-                    <h3><a href="${link}">${title}</a></h3>
-                    <p class="blog-description">${description}</p>
-                    <div class="blog-date">${formattedDate}</div>
-                </div>
-            `;
-        document.getElementById("latest-blog-post").innerHTML = blogHtml;
-      })
-      .catch(err => console.error('Error fetching RSS feed:', err));
-  });
-
-</script>

@@ -4,13 +4,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Evan McKinney Homepage
-repository: evmckinney9/evmckinney9.github.io
+title: Maria Mucci Homepage
+repository: evmckinney9/mariamucci.github.io
 description: >- # this means to ignore newlines until "baseurl:"
-  Evan McKinney's personal homepage, a PhD student at the University of Pittsburgh. 
+  Maria Mucci's personal homepage, an experimental quantum physicist from the University of Pittsburgh. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://evm9.dev" # the base hostname & protocol for your site, e.g. http://example.com
-google_analytics: G-0S6658MQKV
+# url: "http://evm9.dev" # the base hostname & protocol for your site, e.g. http://example.com
+# google_analytics: G-0S6658MQKV
 
 # Build settings
 theme: jekyll-theme-minimal
@@ -20,12 +20,12 @@ plugins:
 
 # Front Matter Defaults
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
-defaults:
-  - scope:
-      path: ""
-    values:
-      author: Evan McKinney
-      image: /assets/img/banners/share_banner.png
+# defaults:
+#   - scope:
+#       path: ""
+#     values:
+#       author: Maria Mucci
+#       image: /assets/img/banners/share_banner.png
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,19 +1,19 @@
-name: "Evan McKinney"
-picture: "/assets/img/profile_pic.png"
-picture_hover: "/assets/img/profile_2.jpg"
+name: "Maria Mucci"
+picture: "/assets/img/maria_profile_pic.jpg"
+picture_hover: "/assets/img/maria_profile_pic2.jpg"
 affiliation: "University of Pittsburgh"
-title: "Computer Engineering PhD Student"
+title: "Physics PhD"
 bio: |
-  Evan McKinney is a fourth-year PhD student at the University of Pittsburgh, co-advised by [Dr. Alex K. Jones](https://pitt-joneslab.github.io/) and [Dr. Michael Hatridge](http://hatlab.pitt.edu/index.html). He completed his undergraduate studies at Iowa State University in Computer Engineering and Physics. Evan's current research focuses on quantum computing architecture and optimizations for near-term applications.
+  Maria Mucci is a PhD graduate from the University of Pittsburgh, advised by [Dr. Michael Hatridge](http://hatlab.pitt.edu/index.html). She completed her dissertation in ultra-narrow masing with superconducting quantum circuits. Before graduate school, she completed her undergraduate studies at Boston University in Physics, graduating with honors undergraduate thesis in biophysics. In her free time, Maria enjoys exploring Pittsburgh on bike in search of coffee and pizza.
   ### Research Interests
-  - Quantum hardware-software co-design
-  - Quantum circuit transpilation and optimization
-  - SNAIL qubit coupling topologies and basis gate sets
+  - Superconducting quantum circuits
+  - Bath engineering using superconducting quantum circuits
+  - Maser light sources and parametric mixing
 
 emails:
-  - evmckinney9@gmail.com
-  - evm33@pitt.edu
-github_username:  evmckinney9
-linkedin_username: evm9
-google_scholar_id: Qx3TAbkAAAAJ
-orcid_id: 0000-0002-4865-5458
+  - mmm.mariamucci@gmail.com
+  - mmm242@pitt.edu
+github_username:  mariamucci
+linkedin_username: maria-mucci-120959307
+google_scholar_id: f7d4qdkAAAAJ&
+# orcid_id: XXXX-XXXX-XXXX-XXXX

@@ -1,34 +1,71 @@
-- university: "University of Pittsburgh"
-  role: "Graduate Teaching Fellow"
-  courses:
-    - term: "Spring 2022"
-      course: "ECE 1188: Cyber-Physical Systems"
-      sort_date: "2022-01-01"
-    - term: "Fall 2021"
-      course: "ECE 0401 Analytical Methods"
-      sort_date: "2021-09-01"
-    - term: "Fall 2021"
-      course: "ECE 1145 Software Construction and Evolution"
-      sort_date: "2021-09-01"
+# ## Teaching
+# - university: "University of Pittsburgh"
+#   role: "Teaching Assistant"
+#   courses:
+#     - term: "Fall 2019"
+#       course: "Introductory, Calculus-based Physics Course"
+#       sort_date: "2019-09-01"
+#     - term: "Fall 2019"
+#       course: "Undergraduate Quantum Mechanics"
+#       sort_date: "2019-09-01"
 
-- university: "Iowa State University"
-  role: "Undergraduate Teaching Assistant"
-  courses:
-    - term: "Fall 2020"
-      course: "CPRE 381: Computer Organization and Assembly Level Programming"
-      sort_date: "2020-09-01"
-    - term: "Summer 2020"
-      course: "CPRE 310: Discrete Math"
-      sort_date: "2020-06-01"
-    - term: "Spring 2020"
-      course: "CPRE 421: Software Analysis and Verification for Safety and Security"
-      sort_date: "2020-01-01"
-    - term: "Fall 2019"
-      course: "CPRE 281: Digital Logic"
-      sort_date: "2019-09-01"
-    - term: "Spring 2019"
-      course: "PHYS 102L: Physical Sciences for Elementary Education"
-      sort_date: "2019-01-01"
-    - term: "Fall 2018"
-      course: "EE 201: Electric Circuits"
-      sort_date: "2018-09-01"
+# - university: "Boston University"
+#   role: "Learning Assistant"
+#   courses:
+#     - term: "Fall 2014 - Spring 2017"
+#       course: "Physics Recitations"
+#       sort_date: "2014-09-01"
+
+# - university: "Destination Science Summer Camp, Stony Brook, NY"
+#   role: "Teacher"
+#   courses:
+#     - term: "Summer 2014 - Summer 2017"
+#       course: "Science Subjects for Grades K-6"
+#       sort_date: "2014-06-01"
+
+# ## Service
+# - university: "University of Pittsburgh"
+#   role: "Graduate Mentor"
+#   courses:
+#     - term: "2019-2021"
+#       course: "Graduate Mentorship"
+#       sort_date: "2019-09-01"
+
+# - university: "Boston University"
+#   role: "Undergraduate Mentor"
+#   courses:
+#     - term: "2015-2017"
+#       course: "Undergraduate Mentorship"
+#       sort_date: "2015-09-01"
+
+# - university: "University of Pittsburgh"
+#   role: "President, Women and Minorities in Physics"
+#   courses:
+#     - term: "2023-Present"
+#       course: "President"
+#       sort_date: "2023-01-01"
+
+#   role: "Treasurer, Women and Minorities in Physics"
+#   courses:
+#     - term: "2022-2023"
+#       course: "Treasurer"
+#       sort_date: "2022-09-01"
+
+# - university: "Boston University"
+#   role: "President, Alpha Chi Sigma"
+#   courses:
+#     - term: "2016-2017"
+#       course: "President"
+#       sort_date: "2016-09-01"
+
+#   role: "Vice President, Alpha Chi Sigma"
+#   courses:
+#     - term: "2015-2016"
+#       course: "Vice President"
+#       sort_date: "2015-09-01"
+
+#   role: "Fundraising Chair, Alpha Chi Sigma"
+#   courses:
+#     - term: "2014-2015"
+#       course: "Fundraising Chair"
+#       sort_date: "2014-09-01"

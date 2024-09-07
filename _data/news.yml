@@ -1,62 +1,54 @@
-- date: "2024-05-20"
-  description: "Quantum Back-End Software Developer Intern @ [IBM](https://www.ibm.com/quantum), NY."
-  
-- date: "2024-03-02"
-  description: "Conference paper @ HPCA'24, Edinburgh, Scotland."
+## start/end dates
+- date: "2024-08-01"
+  description: "Defends PhD in Physics @ University of Pittsburgh."
 
-- date: "2024-02-02"
-  description: "Invited talk @ [Amazon Braket](https://aws.amazon.com/braket/)."
+- date: "2017-08-01"
+  description: "Enrolled at University of Pittsburgh for PhD in Physics."
 
-- date: "2024-01-10"
-  description: "Attended [CircuitQED@20](https://web.cvent.com/event/82742e85-e7ad-4d8d-9320-15b363df69fa/summary) @ Yale, CT."
+- date: "2017-05-01"
+  description: "Graduated with honors in Physics @ Boston University."
 
-- date: "2023-11-27"
-  description: "Awarded FY24 C2QA Postdoc Seed Funding for collaboration with Dr. Eleanor Crane, MIT."
-  
-- date: "2023-10-05"
-  description: "Recognized as a [Qiskit-Advocate](https://qiskit.org/advocates/)"
+## awards
+- date: "2024-05-01"
+  description: "Won Best Poster Award @ Pittsburgh Quantum Institute conference, 2024."
 
-- date: "2023-09-29"
-  description: "Invited talk @ [Qiskit Compiler Seminar Series](https://qiskit.org/documentation/apidoc/transpiler.html#module-qiskit.transpiler)."
-  
-- date: "2023-09-07"
-  description: "Invited talk @ [QuCS Lecture Series](https://sites.nd.edu/quantum/quantum-computer-systems-qucs-lecture-series/research-session/research-session-38-evan-mckinney/)."
-  
 - date: "2023-05-01"
-  description: "Co-advised project awarded QCS-5 Grant from LPS/ARO reserach grant. [Read more](https://news.engineering.pitt.edu/pitt-researchers-receive-57-million-in-research-funding-from-the-us-army/)."
+  description: "Won Thomas-Lain Fund Scholarship Essay Competition @ University of Pittsburgh."
 
-- date: "2023-01-01"
-  description: "Co-advised project awarded Charles E. Kaufman Foundation reserach grant. [Read more](https://news.engineering.pitt.edu/making-a-quantum-leap-forward/)."
+- date: "2019-11-01"
+  description: "Won Outstanding Poster Award @ Pittsburgh Quantum Institute Fall Science conference, 2019."
 
-- date: "2022-04-01"
-  description: "Received NSF Honorable Mention."
+- date: "2018-07-01"
+  description: "Received Dietrich School of Arts and Sciences Summer Research Pre-Doctoral Fellowship, 2018."
 
-- date: "2022-03-18"
-  description: "Attended APS March Meeting @ Chicago."
+- date: "2017-08-01"
+  description: "Awarded Dietrich School of Arts and Sciences Graduate Fellowship, 2017-2018."
 
-- date: "2022-09-15"
-  description: "Presented poster @ PQI."
+## invited presentations and contributed oral presentations
+- date: "2024-03-01"
+  description: "Contributed oral presentation on 'Using three-wave mixing to achieve ultra-narrow masing with superconducting quantum circuits' @ APS March Meeting 2024."
 
-- date: "2023-03-01"
-  description: "Conference paper @ HPCA'23, Montreal, Canada."
+- date: "2022-03-01"
+  description: "Contributed oral presentation on 'A Josephson junction-based maser using three-wave mixing' @ APS March Meeting 2022."
 
-- date: "2023-03-22"
-  description: "Conference talk @ APS March Meeting, Las Vegas."
+- date: "2021-03-01"
+  description: "Contributed oral presentation on 'Bath-engineering qubit systems with 3-wave mixing' @ APS March Meeting 2021."
 
-- date: "2023-06-09"
-  description: "Invited talk @ XCITe, MIT."
+- date: "2020-03-01"
+  description: "Contributed oral presentation on 'A Josephson maser via three-wave coupling' @ APS March Meeting 2020."
 
-- date: "2023-06-21"
-  description: "Conference paper @ ISCA'23, Orlando, Florida."
+- date: "2020-09-01"
+  description: "Invited talk @ QED-C student web panel, 2020."
 
-- date: "2021-06-01"
-  description: "Attended [The Quantum Computing Summer School](https://www.lanl.gov/projects/national-security-education-center/information-science-technology/summer-schools/quantumcomputing/index.php) @ LANL, Los Alamos."
+## posters
+- date: "2024-04-01"
+  description: "Presented poster @ Pittsburgh Quantum Institute conference, 2024."
 
-- date: "2021-05-02"
-  description: "Attended [USEQIP](https://uwaterloo.ca/institute-for-quantum-computing/useqip) @ IQP, University of Waterloo."
+- date: "2022-03-01"
+  description: "Presented poster on 'A Josephson junction-based maser using three-wave mixing' @ Quantum Cavities conference, Jovence, Quebec."
 
-- date: "2021-05-01"
-  description: "Graduated summa cum laude from Iowa State majoring in Computer Engineering and Physics."
+- date: "2020-11-01"
+  description: "Presented poster @ Pittsburgh Quantum Institute conference, 2020."
 
-- date: "2021-08-01"
-  description: "Enrolled at University of Pittsburgh."
+- date: "2019-11-01"
+  description: "Presented poster @ Pittsburgh Quantum Institute Fall Science conference, 2019."
