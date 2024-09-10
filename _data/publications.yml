@@ -12,7 +12,7 @@
 #   poster: "{{ site.baseurl }}/assets/pdf/poster_mirage_HPCA24.pdf"
 
 - title: "Optimizing the geometric interference of a qubit to increase coherence"
-  authors: "**Mucci, M.**, Patel, P., Xia, M., Zhou, C., Lu, P., Cao, X., Hatridge, M."
+  authors: "Patel, P., Xia, M., Zhou, C., Lu, P., Cao, X., **Mucci, M.**, Hatridge, M."
   journal: "In preparation (2024)"
   doi: 
 
